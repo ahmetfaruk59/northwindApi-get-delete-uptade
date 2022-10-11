@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fecth Operations</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="afk.css">
+</head>
+
+<body>
+    <a id="header" href="https://northwind.vercel.app/api/categories">northwind.vercel.app/api/categories</a>
+    <div class="header-btn ">
+        <button class="loginn add-category">Add</button>
+        <button onclick="getCategories()" class="loginn get-category">Get</button>
+    </div>
+
+    <div class="modal-contt">
+        <div class="modal-boxx">
+            <span class="closee">&times;</span>
+                <label>Description</label>
+                <input type="text" class="description-input" required>
+                <label>Name</label>
+                <input type="text" class="name-input" required>
+                <button class="formBtn-addCategory" onclick="addCategories()">Add</button>
+     
+        </div>
+    </div>
+
+    <table id="customers">
+        <thead>
+            <tr>
+                <th style="width:5%">ID</th>
+                <th>Description</th>
+                <th>Name</th>
+                <th style="width:5%">Operation</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+
+        </tbody>
+
+    </table>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

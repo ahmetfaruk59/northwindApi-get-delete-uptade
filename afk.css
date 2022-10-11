@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two:700|Poppins&display=swap');
+  .modal-contt {
+	position: fixed;
+	height: auto;
+	width: 20%;
+	background-color: #4C5A7D;
+	left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+	overflow: auto;
+	z-index: 1;
+	border-radius: 5px;
+  }
+  
+  .modal-boxx {
+	width: 100%;
+	margin: 30px auto;
+	position: relative;
+	/* text-align: ;
+	padding: ; */
+  }
+  
+  .modal-boxx .closee {
+	position: absolute;
+	right: 16px;
+	top: -20px;
+	font-size: 25px;
+	font-weight: bolder;
+	cursor: pointer;
+	padding: 5px;
+	color:white;
+  }
+  .modal-boxx .closee:hover,
+  .modal-boxx .closee:focus {
+	color: #c6c6c6;
+  }
+  .modal-boxx img {
+	width: 30%;
+	border-radius: 50%;
+	display: block;
+	margin: auto;
+	padding: 14px;
+	margin-bottom: 30px;
+	min-width: 150px;
+	max-width: 230px;
+  }
+  .description-input,
+  .name-input{
+	width: 100%;
+	border: 1px solid #d0d0d0;
+	display: block;
+	padding: 8px;
+	margin: 5px 0;
+	margin-bottom: 10px;
+	color: black !important;
+  }
+
+  .modal-boxx .formBtn-addCategory,.start-btn {
+	padding: 10px;
+	font-size: 15px;
+	display: block;
+	width: 100%;
+	color: white !important;
+	background-color:#eea412;
+	margin: 16px 0;
+	border: none;
+	border-radius:0 ;
+	font-weight: 400 !important;
+	text-align: center;
+	transition: 1s ease;
+  }
+  .formBtn-addCategory:hover,.start-btn:hover,.loginn:hover,.form_container .btn input[type="submit"]:hover {
+	background-color: #6271f0;
+	border:1px solid #6271f0;
+
+  }
+  input[type="checkbox"] {
+	margin-right: 2px;
+	vertical-align: baseline; /*no effect for baseline*/
+  }
+  
+  .modal-boxx label,
+  .modal-boxx .formBtn-addCategory,
+  .modal-boxx input,.start-btn {
+	width: 95%;
+	display: block;
+	margin: 10px auto;
+	color:white;
+  }
+  .modal-boxx .formBtn-addCategory,.start-btn {
+	margin-top: 16px;
+	cursor: pointer;
+  }
+  input[type="checkbox"] {
+	display: inline-block;
+	width: auto;
+	margin-left: 16px;
+  }
+  .modal-boxx span {
+	float: right;
+  }
+  .modal-boxx a {
+	color: #1483be;
+	font-weight: 500;
+	text-decoration: underline;
+  }
+  
+  .modal-contt {
+	display: none;
+  }
+  .modal-boxx {
+	animation-name: zoom;
+	animation-duration: 0.7s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+  }
+  @keyframes zoom {
+	from {
+	  transform: scale(0);
+	}
+	to {
+	  transform: scale(1);
+	}
+  }
+  .loginn {
+	padding: 0 20px;
+	font-size: 20px;
+	color: white;
+	background-color:#eea412;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+	transition: .3s ease;
+	text-align: center;
+	display: block;
+  }
+
+.header-btn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
